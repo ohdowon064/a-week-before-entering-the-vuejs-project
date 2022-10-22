@@ -1,16 +1,13 @@
 <template>
-    <h1>Hello, {{title}}!</h1>
     <div>
-        <div>{{htmlString}}</div>
-        <div v-html="htmlString"></div>
+        <input type="text" v-model="valueModel" />
     </div>
 </template>
 <script>
 export default {
     data() {
         return {
-            title: "World",
-            htmlString: '<P style="color:red;">This is a red string.</P>'
+            valueModel: "South Korea"
         };
     }
 }
