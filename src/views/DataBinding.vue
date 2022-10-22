@@ -1,13 +1,13 @@
 <template>
     <div>
-        <input type="number" v-model.number="numberModel" />
+        <textarea v-model="message"></textarea>
     </div>
 </template>
 <script>
 export default {
     data() {
         return {
-            numberModel: 3
+            message: "여러 줄을 입력할 수 있는 textarea 입니다."
         };
     }
 }
