@@ -1,6 +1,6 @@
 <template>
 <div>
-  <PageTitle :title="title"/>
+  <PageTitle :title="post.title" :id="post.id"/>
 </div>
 </template>
 
@@ -11,7 +11,9 @@ export default {
   components: {PageTitle},
   data() {
     return {
-      title: "123"
+      post: {
+        id: 1, title: "Vue3 투입 일주일 전"
+      }
     }
   }
 }
