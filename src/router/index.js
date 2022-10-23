@@ -6,6 +6,7 @@ import EventChange from "@/views/EventChange";
 import ComputedTest from "@/views/ComputedTest";
 import WatchTest from "@/views/WatchTest";
 import NestedComponent from "@/components/NestedComponent";
+import ParentComponent from "@/components/ParentComponent";
 
 const routes = [
   {
@@ -50,6 +51,11 @@ const routes = [
     path: '/nested',
     name: 'NestedComponent',
     component: NestedComponent
+  },
+  {
+    path: '/parent',
+    name: 'ParentComponent',
+    component: ParentComponent
   }
 ]
 
