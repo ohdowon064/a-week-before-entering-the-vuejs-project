@@ -2,7 +2,9 @@
   <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> |
-    <router-link to="/databinding">Databinding</router-link>
+    <router-link to="/databinding">Databinding</router-link> |
+    <router-link to="/eventclick">EventClick</router-link> |
+    <router-link to="/eventchange">EventChange</router-link>
   </nav>
   <router-view/>
 </template>
@@ -29,3 +31,7 @@ nav a.router-link-exact-active {
   color: #42b983;
 }
 </style>
+<script>export default {
+  components: {}
+}
+</script>

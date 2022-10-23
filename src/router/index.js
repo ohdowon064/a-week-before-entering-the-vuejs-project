@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import DataBinding from '../views/DataBinding.vue'
+import EventClick from "@/views/EventClick";
+import EventChange from "@/views/EventChange";
 
 const routes = [
   {
@@ -20,6 +22,16 @@ const routes = [
     path: '/databinding',
     name: 'DataBinding',
     component: DataBinding
+  },
+  {
+    path: '/eventclick',
+    name: 'EventClick',
+    component: EventClick
+  },
+  {
+    path: '/eventchange',
+    name: 'EventChange',
+    component: EventChange
   }
 ]
 
