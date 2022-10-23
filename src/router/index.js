@@ -3,6 +3,8 @@ import HomeView from '../views/HomeView.vue'
 import DataBinding from '../views/DataBinding.vue'
 import EventClick from "@/views/EventClick";
 import EventChange from "@/views/EventChange";
+import ComputedTest from "@/views/ComputedTest";
+import WatchTest from "@/views/WatchTest";
 
 const routes = [
   {
@@ -32,6 +34,16 @@ const routes = [
     path: '/eventchange',
     name: 'EventChange',
     component: EventChange
+  },
+  {
+    path: '/computed',
+    name: 'ComputedTest',
+    component: ComputedTest
+  },
+  {
+    path: '/watch',
+    name: 'WatchTest',
+    component: WatchTest
   }
 ]
 
