@@ -5,6 +5,7 @@ import EventClick from "@/views/EventClick";
 import EventChange from "@/views/EventChange";
 import ComputedTest from "@/views/ComputedTest";
 import WatchTest from "@/views/WatchTest";
+import NestedComponent from "@/components/NestedComponent";
 
 const routes = [
   {
@@ -44,6 +45,11 @@ const routes = [
     path: '/watch',
     name: 'WatchTest',
     component: WatchTest
+  },
+  {
+    path: '/nested',
+    name: 'NestedComponent',
+    component: NestedComponent
   }
 ]
 

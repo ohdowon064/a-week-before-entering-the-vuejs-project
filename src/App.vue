@@ -4,7 +4,8 @@
     <router-link to="/about">About</router-link> |
     <router-link to="/databinding">Databinding</router-link> |
     <router-link to="/eventclick">EventClick</router-link> |
-    <router-link to="/eventchange">EventChange</router-link>
+    <router-link to="/eventchange">EventChange</router-link> |
+    <router-link to="/nested">NestedComponent</router-link>
   </nav>
   <router-view/>
 </template>
