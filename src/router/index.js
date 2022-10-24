@@ -7,6 +7,7 @@ import ComputedTest from "@/views/ComputedTest";
 import WatchTest from "@/views/WatchTest";
 import NestedComponent from "@/components/NestedComponent";
 import ParentComponent from "@/components/ParentComponent";
+import SlotUseModalLayout from "@/views/SlotUseModalLayout";
 
 const routes = [
   {
@@ -56,6 +57,11 @@ const routes = [
     path: '/parent',
     name: 'ParentComponent',
     component: ParentComponent
+  },
+  {
+    path: '/slot',
+    name: 'SlotUseModalLayout',
+    component: SlotUseModalLayout
   }
 ]
 

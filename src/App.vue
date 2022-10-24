@@ -7,6 +7,7 @@
     <router-link to="/eventchange">EventChange</router-link> |
     <router-link to="/nested">NestedComponent</router-link> |
     <router-link to="/parent">ParentComponent</router-link> |
+    <router-link to="/slot">SlotUseModalLayout</router-link> |
   </nav>
   <router-view/>
 </template>
