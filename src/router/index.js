@@ -8,6 +8,7 @@ import WatchTest from "@/views/WatchTest";
 import NestedComponent from "@/components/NestedComponent";
 import ParentComponent from "@/components/ParentComponent";
 import SlotUseModalLayout from "@/views/SlotUseModalLayout";
+import ProvideInject from "@/views/ProvideInject";
 
 const routes = [
   {
@@ -62,6 +63,11 @@ const routes = [
     path: '/slot',
     name: 'SlotUseModalLayout',
     component: SlotUseModalLayout
+  },
+  {
+    path: '/provide-inject',
+    name: 'ProvideInject',
+    component: ProvideInject
   }
 ]
 
