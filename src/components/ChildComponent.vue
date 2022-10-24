@@ -1,5 +1,5 @@
 <template>
-<h1>{{msg}}</h1>
+<button type="button" @click="childFunc" ref="btn">자식 컴포넌트 데이터 변경</button>
 </template>
 
 <script>
@@ -7,11 +7,13 @@ export default {
   name: "ChildComponent",
   data() {
     return {
-      msg: "자식 컴포넌트로부터 보내는 메시지"
+      msg: "메시지"
     }
   },
-  mounted() {
-    this.$emit('send-message', this.msg)
+  methods: {
+    childFunc() {
+      this.msg = "변경된 메시지";
+    }
   }
 }
 </script>
