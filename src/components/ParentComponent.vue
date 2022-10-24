@@ -8,7 +8,7 @@ export default {
   name: "ParentComponent",
   components: {ChildComponent},
   mounted() {
-    this.$refs.childComponent.$refs.btn.click();
+    this.$refs.childComponent.childFunc();
   }
 }
 </script>
