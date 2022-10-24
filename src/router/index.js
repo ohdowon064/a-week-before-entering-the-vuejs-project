@@ -9,6 +9,7 @@ import NestedComponent from "@/components/NestedComponent";
 import ParentComponent from "@/components/ParentComponent";
 import SlotUseModalLayout from "@/views/SlotUseModalLayout";
 import ProvideInject from "@/views/ProvideInject";
+import CalculatorCompositionAPI from "@/views/CalculatorCompositionAPI";
 
 const routes = [
   {
@@ -68,6 +69,11 @@ const routes = [
     path: '/provide-inject',
     name: 'ProvideInject',
     component: ProvideInject
+  },
+  {
+    path: '/calculator',
+    name: 'CalculatorCompositionAPI',
+    component: CalculatorCompositionAPI
   }
 ]
 

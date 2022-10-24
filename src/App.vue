@@ -9,6 +9,7 @@
     <router-link to="/parent">ParentComponent</router-link> |
     <router-link to="/slot">SlotUseModalLayout</router-link> |
     <router-link to="/provide-inject">ProvideInject</router-link> |
+    <router-link to="/calculator">CalculatorCompositionAPI</router-link> |
   </nav>
   <router-view/>
 </template>
