@@ -2,27 +2,34 @@
 <div>
 <h2>Calculator</h2>
   <div>
-    <input type="text" v-model="state.num1" />
+    <input type="text" v-model="num1" />
     <span> + </span>
-    <input type="text" v-model="state.num2" />
+    <input type="text" v-model="num2" />
     <span> = </span>
-    <span>{{state.result}}</span>
+    <span>{{result}}</span>
   </div>
 </div>
 </template>
 <script>
 
-import {reactive, computed} from "vue";
+import {plushCalculator} from "@/common";
+
+function plusCalculator() {
+  let state = reactive({
+    num1: 0,
+    num2: 0,
+    result: computed(() => parseInt(state.num1) + parseInt(state.num2))
+  });
+  return toRefs(state);
+}
 
 export default {
   name: "CalculatorCompositionAPI",
   setup() {
-    let state = reactive({
-      num1: 0,
-      num2: 0,
-      result: computed(() => parseInt(state.num1) + parseInt(state.num2))
-    });
-    return {state}
+    let {num1, num2, result} = plusCalculator();
+    return {
+      num1, num2, result
+    }
   }
 }
 </script>
