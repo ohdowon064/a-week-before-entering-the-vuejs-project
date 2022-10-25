@@ -10,6 +10,7 @@ import ParentComponent from "@/components/ParentComponent";
 import SlotUseModalLayout from "@/views/SlotUseModalLayout";
 import ProvideInject from "@/views/ProvideInject";
 import CalculatorCompositionAPI from "@/views/CalculatorCompositionAPI";
+import Plugins from "@/views/Plugins";
 
 const routes = [
   {
@@ -74,6 +75,11 @@ const routes = [
     path: '/calculator',
     name: 'CalculatorCompositionAPI',
     component: CalculatorCompositionAPI
+  },
+  {
+    path: '/plugin',
+    name: 'Plugins',
+    component: Plugins
   }
 ]
 

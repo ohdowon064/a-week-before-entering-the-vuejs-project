@@ -11,8 +11,7 @@
 </div>
 </template>
 <script>
-
-import {plushCalculator} from "@/common";
+import {computed, reactive, toRefs} from "vue";
 
 function plusCalculator() {
   let state = reactive({
